@@ -16,8 +16,8 @@
         android:layout_height="103dp"
         android:background="@drawable/restaurantlogo"
         android:layout_marginTop="100dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -36,11 +36,11 @@
         <ImageView
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:background="@drawable/moviesicon" />
+            android:background="@drawable/booking" />
         <ImageView
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:background="@drawable/feedback" />
+            android:background="@drawable/news" />
         <ImageView
             android:layout_width="65dp"
             android:layout_height="65dp"
@@ -65,11 +65,11 @@
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:background="@drawable/soup_menu"/>
+                android:background="@drawable/booking"/>
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:background="@drawable/salad_menu"/>
+                android:background="@drawable/news"/>
         </LinearLayout>
     </TableRow>
     </TableLayout>
