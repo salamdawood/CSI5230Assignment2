@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="edu.csi5230.salamshovaajgeliki.csi5230assignment2.SaladPage">
 
-    <ImageView
+  <!--  <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,4 +45,5 @@
         android:inputType="textMultiLine"
         tools:layout_editor_absoluteX="11dp"
         tools:layout_editor_absoluteY="281dp" />
+    -->
 </android.support.constraint.ConstraintLayout>
