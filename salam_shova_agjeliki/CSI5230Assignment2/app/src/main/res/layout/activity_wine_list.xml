@@ -14,7 +14,7 @@
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_height="160dp"
+            android:layout_height="177dp"
             android:layout_weight="1"
             android:background="@drawable/redwine" />
 
@@ -27,6 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:padding="10dp"
                 android:orientation="vertical">
@@ -37,6 +38,7 @@
                     android:layout_height="wrap_content"
                     android:text="Wine Name is here"
                     android:textAlignment="textStart"
+                    android:layout_gravity="start"
                     android:textAllCaps="true"
                     android:textColor="@android:color/black"
                     android:textSize="14sp"
@@ -49,7 +51,8 @@
                     android:layout_marginTop="5dp"
                     android:text="Red Wine  /  2005"
                     android:textColor="#b8b8b8"
-                    android:textAlignment="textStart" />
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"/>
 
                 <TextView
                     android:id="@+id/description"
@@ -65,6 +68,7 @@
                 android:layout_height="70dp"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
                 android:background="@color/colorPrimaryDark"
                 android:padding="10dp"
                 android:orientation="vertical">
@@ -89,6 +93,7 @@
                         android:layout_height="wrap_content"
                         android:text="Glass"
                         android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -112,10 +117,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
                         android:text="Bottle"
                         android:textColor="@android:color/white" />
                 </LinearLayout>
-
             </LinearLayout>
 
             <ImageView
@@ -123,13 +128,12 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="40dp"
                 android:layout_marginRight="15dp"
                 app:srcCompat="@drawable/bestprice" />
         </RelativeLayout>
-
-
     </LinearLayout>
 
     <LinearLayout
@@ -137,122 +141,125 @@
         android:layout_height="wrap_content">
 
         <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/wine_name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wine Name is here"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/wine_type_year1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="White Wine  /  2010"
+                android:textColor="#b8b8b8"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"/>
+
+            <TextView
+                android:id="@+id/description1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#606060"
+                android:textSize="10sp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/colorPrimaryDark"
+            android:padding="10dp"
+            android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:padding="10dp"
-                android:orientation="vertical">
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/wine_name1"
-                    android:layout_width="match_parent"
+                    android:id="@+id/glass_price1"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Wine Name is here"
-                    android:textAlignment="textStart"
-                    android:textAllCaps="true"
-                    android:textColor="@android:color/black"
-                    android:textSize="14sp"
+                    android:text="$2.00"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/wine_type_year1"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="White Wine  /  2010"
-                    android:textColor="#b8b8b8"
-                    android:textAlignment="textStart" />
-
-                <TextView
-                    android:id="@+id/description1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="#606060"
-                    android:textSize="10sp"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor" />
+                    android:text="Glass"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@android:color/white"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
-                android:background="@color/colorPrimaryDark"
-                android:padding="10dp"
-                android:orientation="vertical">
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
+                <TextView
+                    android:id="@+id/bottle_price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$19.50"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/glass_price1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="$2.00"
-                        android:textColor="@android:color/white"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Glass"
-                        android:layout_marginStart="5dp"
-                        android:textColor="@android:color/white"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/bottle_price1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="$19.50"
-                        android:textColor="@android:color/white"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:text="Bottle"
-                        android:textColor="@android:color/white" />
-                </LinearLayout>
-
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Bottle"
+                    android:textColor="@android:color/white" />
             </LinearLayout>
+        </LinearLayout>
 
-            <ImageView
-                android:id="@+id/best_price1"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="40dp"
-                android:layout_marginRight="15dp"
-                app:srcCompat="@drawable/bestprice" />
-        </RelativeLayout>
+        <ImageView
+            android:id="@+id/best_price1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="15dp"
+            app:srcCompat="@drawable/bestprice" />
+    </RelativeLayout>
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_height="160dp"
+            android:layout_height="173dp"
             android:layout_weight="1"
             android:background="@drawable/whitewine" />
-
-
     </LinearLayout>
 
     <LinearLayout
@@ -261,7 +268,7 @@
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_height="160dp"
+            android:layout_height="189dp"
             android:layout_weight="1"
             android:background="@drawable/redwine2" />
 
@@ -270,12 +277,11 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
 
-
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:padding="10dp"
                 android:orientation="vertical">
@@ -286,6 +292,7 @@
                     android:layout_height="wrap_content"
                     android:text="Wine Name is here"
                     android:textAlignment="textStart"
+                    android:layout_gravity="start"
                     android:textAllCaps="true"
                     android:textColor="@android:color/black"
                     android:textSize="14sp"
@@ -297,7 +304,8 @@
                     android:layout_height="wrap_content"
                     android:text="Red Wine  /  2003"
                     android:textColor="#b8b8b8"
-                    android:textAlignment="textStart" />
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"/>
 
                 <TextView
                     android:id="@+id/description2"
@@ -313,6 +321,7 @@
                 android:layout_height="70dp"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
                 android:background="@color/colorPrimaryDark"
                 android:padding="10dp"
                 android:orientation="vertical">
@@ -337,6 +346,7 @@
                         android:layout_height="wrap_content"
                         android:text="Glass"
                         android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -360,26 +370,25 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
                         android:text="Bottle"
                         android:textColor="@android:color/white" />
                 </LinearLayout>
-
             </LinearLayout>
-
             <ImageView
                 android:id="@+id/best_price3"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="40dp"
                 android:layout_marginRight="15dp"
                 app:srcCompat="@drawable/bestprice" />
         </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
 
-            </LinearLayout>
-
-        </LinearLayout>
 
 
 
