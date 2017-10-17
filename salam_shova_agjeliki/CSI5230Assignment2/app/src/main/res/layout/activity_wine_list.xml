@@ -219,7 +219,7 @@
                         android:id="@+id/bottle_price1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="19.50"
+                        android:text="$19.50"
                         android:textColor="@android:color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
