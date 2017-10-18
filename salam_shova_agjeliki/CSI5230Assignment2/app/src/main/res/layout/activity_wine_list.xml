@@ -8,13 +8,18 @@
     android:orientation="vertical"
     tools:context="edu.csi5230.salamshovaajgeliki.csi5230assignment2.NewsList">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/winelistbar"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_height="177dp"
+            android:layout_height="160dp"
             android:layout_weight="1"
             android:background="@drawable/redwine" />
 
@@ -257,7 +262,7 @@
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_height="173dp"
+            android:layout_height="160dp"
             android:layout_weight="1"
             android:background="@drawable/whitewine" />
     </LinearLayout>
@@ -268,7 +273,7 @@
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_height="189dp"
+            android:layout_height="160dp"
             android:layout_weight="1"
             android:background="@drawable/redwine2" />
 
