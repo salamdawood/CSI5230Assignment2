@@ -4,6 +4,119 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="edu.csi5230.salamshovaajgeliki.csi5230assignment2.Contact">
+    tools:context="edu.csi5230.salamshovaajgeliki.csi5230assignment2.Contact"
+    android:background="#202739">
+
+    <ImageView
+        android:id="@+id/image_wine_page_id"
+        android:layout_width="390dp"
+        android:layout_height="300dp"
+        android:background="@drawable/image_wine_page"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="253dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_wine_page_id"
+        app:srcCompat="@drawable/info_contact_page"/>
+
+    <TextView
+        android:id="@+id/wine_name"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="22dp"
+        android:text="Address:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_wine_page_id" />
+
+    <TextView
+        android:id="@+id/white_name"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="0dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wine_name" />
+
+    <TextView
+        android:id="@+id/wine_description"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:text="Phone: +44 12 3456 789 Email: Yourname@gmail.com www.yourwebsite.com"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/white_name" />
+
+    <RelativeLayout
+        android:id="@+id/wine_page_footer"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp">
+
+        <ImageView
+            android:id="@+id/google_logo_wine_page"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/google_contact_page" />
+
+        <ImageView
+            android:id="@+id/twitter_logo_wine_page"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/google_logo_wine_page"
+            android:background="@drawable/twitter_white_contact_page" />
+
+        <ImageView
+            android:id="@+id/facebook_logo_wine_page"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/twitter_logo_wine_page"
+            android:background="@drawable/facebook_white_contact_page" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/border"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/border_contact_page"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="288dp" />
 
 </android.support.constraint.ConstraintLayout>
